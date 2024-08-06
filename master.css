@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+body{
+    background: rgba(0, 0, 0, 0.788);
+}
+.box{
+    background: white;
+    margin: 200px auto;
+    width: fit-content;
+    height: fit-content;
+    max-width: 650px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.box h2{
+    position: relative;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.box h2::after{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 75px;
+    background-color:rgb(102, 100, 237);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.box blockquote{
+    min-height: 110px;
+    font-size: 26px;
+}
+.box blockquote::after,.box blockquote::before{
+    content: '"';
+}
+.box span{
+    display: block;
+    float: right;
+    position: relative;
+}
+.box span::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: black;
+    top: 50%;
+    left: -30px;
+
+}
+.box .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; 
+}
+.btn button{
+    border: none;
+    background-color: rgb(0, 110, 255);
+    color: white;
+    margin: 5px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
